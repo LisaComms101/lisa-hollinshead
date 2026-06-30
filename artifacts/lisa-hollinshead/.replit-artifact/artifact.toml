@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Lisa Hollinshead"
+version = "1.0.0"
+id = "artifacts/lisa-hollinshead"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22069
+
+[services.development]
+run = "pnpm --filter @workspace/lisa-hollinshead run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/lisa-hollinshead", "run", "build" ]
+publicDir = "artifacts/lisa-hollinshead/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22069"
+BASE_PATH = "/"

@@ -1,0 +1,186 @@
+Build a clean, elegant personal brand website for Lisa Hollinshead at LisaHollinshead.com.
+
+The site should position Lisa as a journalist, author, speaker and communications strategist exploring modern womanhood through first-person journalism, psychology, health, relationships, ADHD, personal growth, career, parenting and reinvention.
+
+Overall feel:
+
+* Editorial
+* Warm
+* Premium but not corporate
+* Feminine without being overly soft
+* Clean, modern and magazine-like
+* Honest, thoughtful and intelligent
+
+Primary positioning statement:
+“Thoughtful first-person journalism exploring what it really means to be a modern woman in her forties — through the lens of psychology, health, relationships and personal growth.”
+
+Tone:
+Relatable without being preachy.
+Vulnerable without being self-indulgent.
+Practical without losing emotional depth.
+It should feel like a conversation with someone who has lived through the questions her readers are asking themselves.
+
+Suggested homepage structure:
+
+1. Hero section
+
+Headline:
+Lisa Hollinshead
+
+Subheading:
+Journalist. Author. Speaker. Communications Strategist.
+
+Intro copy:
+Lisa Hollinshead writes thoughtful first-person journalism exploring what it really means to be a modern woman in her forties — through the lens of psychology, health, relationships, ADHD, motherhood, career and personal growth.
+
+CTA buttons:
+Read Lisa’s Work
+Book Lisa / Get in Touch
+
+2. As Seen In / Featured In
+
+Add logo strip placeholders for:
+MailOnline
+Mamamia
+Social101
+SBS
+9Honey
+Kidspot
+Daily Mail
+Yahoo / 7Life if relevant
+
+3. About Lisa
+
+Copy:
+Lisa Hollinshead is a journalist, communications strategist and founder with more than 20 years’ experience across media, PR, storytelling and brand building.
+
+As the founder of Social101, Comms101 and One Another, Lisa has spent her career helping people, brands and communities tell stories that matter. Now, through her own writing and commentary, she explores the emotional, psychological and practical realities of modern womanhood — from ADHD, relationships and burnout to single motherhood, reinvention, wellbeing and the quiet power of finally feeling enough.
+
+4. Editorial Themes
+
+Create four cards:
+
+Modern Womanhood
+Stories about identity, reinvention, confidence, ageing, purpose and the emotional shift that happens in your forties.
+
+Health & Wellbeing
+Expert-led features on ADHD, perimenopause, gut health, stress, protein, damp drinking, gratitude and nervous system regulation.
+
+Relationships & Boundaries
+Writing on dating, friendship, family dynamics, people pleasing, hyper-independence, rejection sensitivity and choosing peace over potential.
+
+Career & Reinvention
+Commentary on ambition, burnout, confidence, entrepreneurship, media, storytelling and redefining success.
+
+5. Featured Articles / Coming Soon
+
+Create article card placeholders for:
+
+* Why Women Are Finally Choosing Peace Over Potential
+* The Cost of Hyper-Independence
+* The Emotional Hangover of People Pleasing
+* The Era of Enough
+* The Luxury of Saying No
+* Busy Isn’t a Personality
+* The Truth About RSD
+* The Rise of Damp Drinking
+* The Confidence That Only Comes After Disappointment
+* Secure. Content. Seen.
+
+Each card should allow a headline, short excerpt, publication name, date and link.
+
+6. Speaking / Commentary
+
+Copy:
+Lisa is available for media commentary, podcast interviews, panels and speaking opportunities on modern womanhood, ADHD, single motherhood, reinvention, storytelling, personal branding, PR, kindness, community and the changing definition of success.
+
+CTA:
+Invite Lisa to Speak
+
+7. Brands / Founder Section
+
+Add a section called “Founder of”
+
+Include cards for:
+Social101 — editorial platform founded in 2010.
+Comms101 — PR and communications consultancy.
+One Another — kindness-led community and volunteering platform.
+
+Optional copy:
+Lisa’s work spans publishing, publicity, production and purpose-led community building.
+
+8. Newsletter / Substack Placeholder
+
+Create a newsletter sign-up section.
+
+Headline:
+Secure. Content. Seen.
+
+Copy:
+A thoughtful newsletter for women navigating identity, health, relationships, ambition and the quiet power of becoming enough.
+
+CTA:
+Join the List
+
+9. Contact
+
+Include a simple contact form:
+Name
+Email
+Reason for enquiry dropdown:
+
+* Journalism / commission
+* Speaking / podcast
+* Media commentary
+* Brand / PR enquiry
+* General enquiry
+  Message
+
+Also include email placeholder:
+[hello@lisahollinshead.com](mailto:hello@lisahollinshead.com)
+
+Site pages:
+
+Home
+About
+Journalism
+Speaking
+Brands
+Contact
+
+Optional future pages:
+Books
+Newsletter
+Media Kit
+
+Design direction:
+
+* Use lots of white space
+* Editorial typography
+* Soft neutral palette: ivory, warm white, muted blush, charcoal, soft taupe
+* Avoid overly bright colours
+* Use large pull quotes and magazine-style feature cards
+* Mobile-first responsive design
+* Easy to update with new articles
+* SEO-friendly page titles and meta descriptions
+
+Suggested SEO keywords:
+Lisa Hollinshead
+Lisa Hollinshead journalist
+modern womanhood writer
+first-person journalism
+ADHD women writer
+single mother journalist
+women in their forties
+personal growth writer
+Australian journalist
+communications strategist
+
+Homepage meta title:
+Lisa Hollinshead | Journalist, Author, Speaker & Communications Strategist
+
+Homepage meta description:
+Lisa Hollinshead writes thoughtful first-person journalism exploring modern womanhood, ADHD, health, relationships, motherhood, career and personal growth.
+
+Important:
+The website should not feel like a PR agency website. It should feel like a personal editorial platform for Lisa Hollinshead as a journalist, author, speaker and thought leader. Her businesses should support her credibility but not dominate the homepage.

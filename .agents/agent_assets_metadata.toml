@@ -1,0 +1,14 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "00WVWuTYDy9eJaZXVgDtp"
+uri = "file://artifacts/lisa-hollinshead/public/images/hero-texture.png"
+type = "image"
+title = "Warm abstract editorial texture"
+
+[[generated]]
+id = "UYZhMfYrEKPXMKtl4KK_X"
+uri = "file://artifacts/lisa-hollinshead/public/images/about-texture.png"
+type = "image"
+title = "Elegant light on paper"
