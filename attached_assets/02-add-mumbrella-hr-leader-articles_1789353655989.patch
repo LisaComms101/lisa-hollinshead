@@ -1,0 +1,42 @@
+diff --git a/artifacts/lisa-hollinshead/src/data/content.ts b/artifacts/lisa-hollinshead/src/data/content.ts
+index 26e1694..abc0313 100644
+--- a/artifacts/lisa-hollinshead/src/data/content.ts
++++ b/artifacts/lisa-hollinshead/src/data/content.ts
+@@ -92,6 +92,24 @@ export const articles: Article[] = [
+     theme: "Motherhood & ADHD",
+     url: "https://kidspot.news.com.au/lifestyle/family-health/adhd-is-my-super-power-and-kryptonite-all-rolled-into-one/news-story/102323e626aaf3eb3657805f6acd55a9",
+   },
++  {
++    id: 16,
++    headline: "Calling time on social washing in corporate culture and CSR",
++    excerpt: "Why purpose needs to be embedded in workplace culture and corporate responsibility, rather than reduced to promises without meaningful action.",
++    publication: "Mumbrella",
++    date: "June 2024",
++    theme: "People & Culture",
++    url: "https://mumbrella.com.au/calling-time-on-social-washing-when-it-comes-to-investing-in-corporate-culture-and-csr-834653",
++  },
++  {
++    id: 17,
++    headline: "How to foster purpose and productivity while combating social washing",
++    excerpt: "A practical look at the connection between genuine social purpose, employee engagement and productive workplace culture.",
++    publication: "HR Leader",
++    date: "July 2024",
++    theme: "People & Culture",
++    url: "https://www.hrleader.com.au/people/25661-how-to-foster-purpose-and-productivity-while-combating-social-washing",
++  },
+   {
+     id: 3,
+     headline: "I road-tripped New Zealand's South Island in an RV with my 10-year-old",
+diff --git a/artifacts/lisa-hollinshead/src/pages/Home.tsx b/artifacts/lisa-hollinshead/src/pages/Home.tsx
+index 99f0dfb..e137ea4 100644
+--- a/artifacts/lisa-hollinshead/src/pages/Home.tsx
++++ b/artifacts/lisa-hollinshead/src/pages/Home.tsx
+@@ -13,7 +13,7 @@ const fadeUp = {
+   }),
+ };
+ 
+-const publications = ["Mamamia", "9Honey", "SBS Food", "Kidspot", "Daily Mail", "MiNDFOOD", "Social101"];
++const publications = ["Mamamia", "9Honey", "SBS Food", "Mumbrella", "HR Leader", "Kidspot", "Daily Mail", "MiNDFOOD", "Social101"];
+ 
+ export default function Home() {
+   return (
