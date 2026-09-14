@@ -52,14 +52,14 @@ export default function About() {
             className="lg:col-span-1"
           >
             <div className="aspect-[3/4] bg-[hsl(35,15%,88%)] relative overflow-hidden sticky top-32">
-              <div
-                className="absolute inset-0"
-                style={{
-                  background: "linear-gradient(160deg, hsl(0,25%,84%) 0%, hsl(35,20%,82%) 60%, hsl(45,25%,90%) 100%)",
-                }}
+              <img
+                src={`${import.meta.env.BASE_URL}images/lisa-about-dog.webp`}
+                alt="Lisa Hollinshead with her dog"
+                className="absolute inset-0 h-full w-full object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
               <div className="absolute bottom-8 left-8 right-8">
-                <p className="font-serif text-lg italic text-[hsl(30,3%,28%)] leading-relaxed">
+                <p className="font-serif text-lg italic text-white leading-relaxed">
                   "A career built by following curiosity, rather than a career ladder."
                 </p>
               </div>
@@ -99,6 +99,24 @@ export default function About() {
                 Get in Touch <ArrowRight size={14} />
               </Link>
             </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* FAMILY & ADVENTURE */}
+      <section className="bg-[hsl(45,30%,97%)]">
+        <div className="container mx-auto px-6 lg:px-12 pb-28 lg:pb-36">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="aspect-[16/9] overflow-hidden"
+          >
+            <img
+              src={`${import.meta.env.BASE_URL}images/lisa-albie-queenstown.webp`}
+              alt="Lisa Hollinshead and Albie in Queenstown"
+              className="h-full w-full object-cover"
+            />
           </motion.div>
         </div>
       </section>

@@ -61,14 +61,14 @@ export default function Home() {
             className="hidden lg:block"
           >
             <div className="w-full aspect-[3/4] bg-[hsl(40,20%,88%)] relative overflow-hidden">
-              <div
-                className="absolute inset-0 opacity-60"
-                style={{
-                  background: "linear-gradient(135deg, hsl(0,30%,85%) 0%, hsl(35,25%,80%) 50%, hsl(45,30%,90%) 100%)",
-                }}
+              <img
+                src={`${import.meta.env.BASE_URL}images/lisa-hero-beach.webp`}
+                alt="Lisa Hollinshead on the beach"
+                className="absolute inset-0 h-full w-full object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
               <div className="absolute bottom-8 left-8 right-8">
-                <blockquote className="font-serif text-xl italic text-[hsl(30,3%,25%)] leading-relaxed">
+                <blockquote className="font-serif text-xl italic text-white leading-relaxed">
                   "Curious about people. Restless for stories. Always ready to go."
                 </blockquote>
               </div>
@@ -108,17 +108,11 @@ export default function Home() {
             viewport={{ once: true }}
             className="aspect-square bg-[hsl(35,15%,90%)] relative overflow-hidden max-w-md"
           >
-            <div
-              className="absolute inset-0"
-              style={{
-                background: "linear-gradient(160deg, hsl(35,20%,88%) 0%, hsl(0,25%,83%) 100%)",
-              }}
+            <img
+              src={`${import.meta.env.BASE_URL}images/lisa-about-beach.webp`}
+              alt="Lisa Hollinshead by the beach"
+              className="absolute inset-0 h-full w-full object-cover"
             />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center p-12">
-                <p className="font-serif text-3xl italic text-[hsl(30,3%,30%)] leading-tight">"20+ years of stories<br />that matter."</p>
-              </div>
-            </div>
           </motion.div>
 
           <motion.div
@@ -335,7 +329,19 @@ export default function Home() {
 
       {/* PODCAST */}
       <section className="py-28 lg:py-36 bg-[hsl(30,3%,17%)]">
-        <div className="container mx-auto px-6 lg:px-12 max-w-2xl text-center">
+        <div className="container mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-16 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -24 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="aspect-[4/3] overflow-hidden"
+          >
+            <img
+              src={`${import.meta.env.BASE_URL}images/lisa-podcast-studio.webp`}
+              alt="Lisa Hollinshead recording in a podcast studio"
+              className="h-full w-full object-cover"
+            />
+          </motion.div>
           <motion.div
             initial="hidden"
             whileInView="visible"

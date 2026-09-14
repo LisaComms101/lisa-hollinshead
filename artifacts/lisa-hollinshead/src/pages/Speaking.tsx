@@ -57,39 +57,53 @@ export default function Speaking() {
 
       {/* PAGE HEADER */}
       <section className="pt-40 pb-24 bg-[hsl(30,3%,17%)]">
-        <div className="container mx-auto px-6 lg:px-12">
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-xs uppercase tracking-[0.25em] text-[hsl(0,30%,65%)] mb-5 font-sans"
-          >
-            Speaking & Commentary
-          </motion.p>
-          <motion.h1
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="font-serif text-5xl md:text-6xl lg:text-7xl text-[hsl(45,30%,97%)] leading-tight"
-          >
-            Speak with<br />Lisa
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="mt-8 text-lg text-[hsl(35,8%,65%)] max-w-xl font-light"
-          >
-            Lisa is available for media commentary, podcast interviews, panels and speaking opportunities on modern womanhood, ADHD, single motherhood, reinvention, storytelling and the changing definition of success.
-          </motion.p>
+        <div className="container mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-16 items-end">
+          <div>
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-xs uppercase tracking-[0.25em] text-[hsl(0,30%,65%)] mb-5 font-sans"
+            >
+              Speaking & Commentary
+            </motion.p>
+            <motion.h1
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="font-serif text-5xl md:text-6xl lg:text-7xl text-[hsl(45,30%,97%)] leading-tight"
+            >
+              Speak with<br />Lisa
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="mt-8 text-lg text-[hsl(35,8%,65%)] max-w-xl font-light"
+            >
+              Lisa is available for media commentary, podcast interviews, panels and speaking opportunities on modern womanhood, ADHD, single motherhood, reinvention, storytelling and the changing definition of success.
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="mt-10"
+            >
+              <Link href="/contact" className="inline-flex items-center gap-3 px-8 py-4 bg-[hsl(0,30%,65%)] text-[hsl(45,30%,97%)] text-sm uppercase tracking-widest hover:bg-[hsl(0,30%,55%)] transition-colors">
+                Invite Lisa to Speak <ArrowRight size={14} />
+              </Link>
+            </motion.div>
+          </div>
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="mt-10"
+            initial={{ opacity: 0, x: 24 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="aspect-[4/3] overflow-hidden"
           >
-            <Link href="/contact" className="inline-flex items-center gap-3 px-8 py-4 bg-[hsl(0,30%,65%)] text-[hsl(45,30%,97%)] text-sm uppercase tracking-widest hover:bg-[hsl(0,30%,55%)] transition-colors">
-              Invite Lisa to Speak <ArrowRight size={14} />
-            </Link>
+            <img
+              src={`${import.meta.env.BASE_URL}images/lisa-sbs-fifa.webp`}
+              alt="Lisa Hollinshead at SBS during the FIFA World Cup"
+              className="h-full w-full object-cover"
+            />
           </motion.div>
         </div>
       </section>
@@ -161,7 +175,19 @@ export default function Speaking() {
 
       {/* PULL QUOTE */}
       <section className="py-24 bg-[hsl(0,30%,73%)]/10 border-t border-b border-[hsl(0,30%,73%)]/20">
-        <div className="container mx-auto px-6 lg:px-12 max-w-3xl text-center">
+        <div className="container mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-16 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -24 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="aspect-[4/3] overflow-hidden"
+          >
+            <img
+              src={`${import.meta.env.BASE_URL}images/lisa-ahc-event.webp`}
+              alt="Lisa Hollinshead speaking at an event"
+              className="h-full w-full object-cover"
+            />
+          </motion.div>
           <motion.blockquote
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
