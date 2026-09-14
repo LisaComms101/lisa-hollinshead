@@ -8,7 +8,7 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Journalism from "@/pages/Journalism";
 import Speaking from "@/pages/Speaking";
-import Brands from "@/pages/Brands";
+import Publicity from "@/pages/Publicity";
 import Contact from "@/pages/Contact";
 
 const queryClient = new QueryClient();
@@ -20,8 +20,9 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/journalism" component={Journalism} />
       <Route path="/speaking" component={Speaking} />
-      <Route path="/work" component={Brands} />
-      <Route path="/brands" component={Brands} />
+      <Route path="/publicity" component={Publicity} />
+      <Route path="/work" component={Publicity} />
+      <Route path="/brands" component={Publicity} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>

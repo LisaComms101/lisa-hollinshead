@@ -1,0 +1,235 @@
+Please implement a strategic hierarchy correction across the Lisa Hollinshead website.
+
+Do not redesign the visual identity. Preserve the existing typography, colour palette, spacing style and editorial sophistication.
+
+Do not use stock photography, generate images or alter any supplied photograph, face or person.
+
+Do not republish when finished. Stop after the build passes so the changes can be reviewed in Preview.
+
+NAVIGATION
+
+Change the desktop and mobile navigation to this exact order:
+
+Home
+Publicity
+Journalism
+About
+Speaking
+Contact
+
+Replace “Work With Lisa” with “Publicity”.
+
+The Publicity navigation item must link to /publicity.
+
+Preserve /work as a redirect or alias to /publicity so existing links do not break.
+
+HOMEPAGE HERO
+
+Change the descriptor to:
+
+Journalist · Publicist · Founder · Storyteller
+
+Change the primary headline to:
+
+I tell stories that make people feel something.
+And help good ideas get noticed.
+
+Supporting copy:
+
+For more than 20 years, Lisa Hollinshead has worked on both sides of the media, writing stories, creating campaigns, building platforms and helping good ideas earn attention.
+
+Use two equal calls to action:
+
+Explore Lisa’s Journalism → /journalism
+Publicity & Strategy → /publicity
+
+HOMEPAGE HIERARCHY
+
+Reorder the homepage into:
+
+1. Integrated hero
+2. Dual credibility strip
+3. Three professional pillars
+4. Selected publicity work
+5. Selected external journalism
+6. About Lisa
+7. Founder ecosystem
+8. Speaking and podcast
+9. Final contact CTA
+
+DUAL CREDIBILITY
+
+Create two clearly labelled proof areas:
+
+PUBLISHED BY
+
+Mamamia
+Nine / 9Honey
+SBS Food
+Daily Mail
+Mumbrella
+HR Leader
+Kidspot
+MiNDFOOD
+
+PUBLICITY EXPERIENCE
+
+SBS
+FIFA
+Culture Kings x San Francisco 49ers
+The Fourth Wall
+FINNS Bali
+Pour Sport
+
+Do not invent logos if logo files are unavailable. Use premium typography instead.
+
+THREE PROFESSIONAL PILLARS
+
+Create three equal pathways directly beneath the credibility section:
+
+PUBLICITY
+
+Publicity, earned media and strategic counsel through Comms 101. Lisa works across entertainment, sport, culture, travel, consumer brands and founder-led businesses.
+
+CTA: Explore Publicity
+
+JOURNALISM
+
+Commissioned features, first-person essays, travel writing, interviews and cultural commentary.
+
+CTA: Read Lisa’s Journalism
+
+FOUNDER
+
+Social101, OneAnother and the platforms Lisa has built around stories, culture and real-world connection.
+
+CTA: Explore Lisa’s World
+
+SELECTED PUBLICITY WORK
+
+Place this section before Featured Journalism.
+
+Heading:
+
+Selected Publicity Work
+
+Intro:
+
+More than 20 years of turning programmes, people, brands and ideas into stories the media wants to tell.
+
+Feature these campaign areas:
+
+SBS Entertainment, Sport & Factual
+Include Who Do You Think You Are?, Sean Micallef’s Origin Odyssey, Cup Fever!, FIFA and Plating Locally.
+
+Culture Kings x San Francisco 49ers
+Describe Lisa’s role in earned-media strategy and campaign publicity surrounding the Australian activation.
+
+The Fourth Wall
+Describe launch positioning, founder profiling, media strategy and publicity for the performing-arts publication.
+
+Also show FINNS Bali and Pour Sport as additional recent work.
+
+Do not invent metrics, coverage or results. Use only information already present in the project.
+
+Add CTA:
+
+View Publicity & Strategy → /publicity
+
+FEATURED JOURNALISM
+
+Do not generate this section with articles.slice(0, 6) or another automatic first-six selection.
+
+Create an explicit featured-article selection using these six external commissions:
+
+1. Mamamia
+https://www.mamamia.com.au/new-zealand-family-holiday/
+
+2. Mamamia
+https://www.mamamia.com.au/career-travel-single-mum/
+
+3. Mamamia
+https://www.mamamia.com.au/travel-single-parent-grief/
+
+4. Nine / 9Honey
+https://www.nine.com.au/lifestyle/family-relationships/parenting/single-mother-parenting-travel-responsibility-picture-of-son-haunts-me-20260805-p60ll1.html
+
+5. SBS Food
+https://www.sbs.com.au/food/article/michelin-has-arrived-in-queenstown-but-its-chefs-say-the-real-story-began-long-before-the-stars/ou3fbs1qk
+
+6. Daily Mail
+https://www.dailymail.com/lifestyle/article-15872547/binge-drinking-alcohol-Lisa-Hollinshead-sobriety-abstinence.html
+
+Social101 articles should remain available on the full Journalism page, but Social101 must not dominate the six homepage features.
+
+PUBLICITY PAGE
+
+Create /publicity as a substantial commercial page.
+
+Eyebrow:
+
+COMMS 101
+
+Main heading:
+
+Publicity built with newsroom judgement.
+
+Introductory copy:
+
+Lisa Hollinshead brings more than 20 years across journalism, publicity, publishing and founder-led businesses to stories that deserve attention. Through Comms 101, she works with entertainment, sport, travel, cultural organisations, consumer brands and founders on strategic, editorially intelligent earned media.
+
+Include these sections:
+
+1. Publicity & Earned Media
+Campaign strategy, media relations, launches, talent publicity, press-office support and culturally relevant moments.
+
+2. Entertainment, Talent & Broadcast
+Television publicity, talent positioning, media days, interview strategy, programme launches and broadcast campaigns.
+
+3. Founder & Brand Storytelling
+Founder profiling, thought leadership, positioning and narratives that create authority beyond a single announcement.
+
+4. Strategy & Senior Counsel
+Communications strategy, creative counsel, spokesperson positioning, workshops and senior advisory support.
+
+Add a section titled:
+
+Why Lisa
+
+Include this central proposition:
+
+Lisa understands how stories travel because she works on both sides of the media. She pitches journalists and is a journalist. She advises founders and is a founder. She creates campaigns and understands the editorial judgement that determines whether they earn attention.
+
+Add Selected Work featuring:
+
+SBS
+Culture Kings x San Francisco 49ers
+The Fourth Wall
+FINNS Bali
+Pour Sport
+
+For each, include the project context and Lisa’s role. Do not invent results.
+
+Remove Social101 and OneAnother founder cards from the Publicity page. They belong on the homepage and About page, not inside the commercial publicity offer.
+
+End with:
+
+Have something worth talking about?
+
+CTA:
+
+Start a Conversation → /contact
+
+TECHNICAL CHECKS
+
+Confirm all supplied website images exist and display correctly.
+
+Check the homepage, Publicity, Journalism, About, Speaking and Contact pages on desktop and mobile.
+
+Check that every featured article opens the correct external URL.
+
+Check that /work redirects or resolves to /publicity.
+
+Run the type-check and production build.
+
+Do not republish. Report exactly what changed and flag anything requiring Lisa’s decision.

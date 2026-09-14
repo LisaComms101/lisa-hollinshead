@@ -8,7 +8,65 @@ export type Article = {
   url: string;
 };
 
+export const featuredArticles: Article[] = [
+  {
+    id: 101,
+    headline: "I thought I'd planned the perfect holiday with my son. Then he asked one question that proved me wrong.",
+    excerpt: "A mother-son holiday to New Zealand reveals unexpected truths about parenting and travel expectations.",
+    publication: "Mamamia",
+    date: "Aug 22, 2026",
+    theme: "Motherhood & ADHD",
+    url: "https://www.mamamia.com.au/new-zealand-family-holiday/",
+  },
+  {
+    id: 102,
+    headline: "On the outside, our holiday looked like a dream. The truth is, it cost me 20 years.",
+    excerpt: "Navigating the complexities of career, travel and single motherhood across decades.",
+    publication: "Mamamia",
+    date: "Aug 16, 2026",
+    theme: "Life & Reinvention",
+    url: "https://www.mamamia.com.au/career-travel-single-mum/",
+  },
+  {
+    id: 103,
+    headline: "I love travelling with my son. But family holidays still make me grieve the life I thought we'd have.",
+    excerpt: "The nuanced emotions of solo parenting while creating memories around the world.",
+    publication: "Mamamia",
+    date: "Jul 11, 2026",
+    theme: "Motherhood & ADHD",
+    url: "https://www.mamamia.com.au/travel-single-parent-grief/",
+  },
+  {
+    id: 104,
+    headline: "Why this picture of my son haunts me as a single mum",
+    excerpt: "A reflection on the unseen weight of responsibility and the realities of solo parenting.",
+    publication: "Nine / 9Honey",
+    date: "Aug 5, 2026",
+    theme: "Motherhood & ADHD",
+    url: "https://www.nine.com.au/lifestyle/family-relationships/parenting/single-mother-parenting-travel-responsibility-picture-of-son-haunts-me-20260805-p60ll1.html",
+  },
+  {
+    id: 105,
+    headline: "Michelin has arrived in Queenstown. But its chefs say the real story began long before the stars",
+    excerpt: "Exploring the culinary evolution of New Zealand's adventure capital.",
+    publication: "SBS Food",
+    date: "Sep 9, 2026",
+    theme: "Travel & Adventure",
+    url: "https://www.sbs.com.au/food/article/michelin-has-arrived-in-queenstown-but-its-chefs-say-the-real-story-began-long-before-the-stars/ou3fbs1qk",
+  },
+  {
+    id: 106,
+    headline: "I finally quit binge drinking in my forties - here is what happened",
+    excerpt: "A first-person sobriety story about redefining social life and abstinence in midlife.",
+    publication: "Daily Mail",
+    date: "",
+    theme: "Life & Reinvention",
+    url: "https://www.dailymail.com/lifestyle/article-15872547/binge-drinking-alcohol-Lisa-Hollinshead-sobriety-abstinence.html",
+  }
+];
+
 export const articles: Article[] = [
+  ...featuredArticles,
   {
     id: 16,
     headline: "Calling time on social washing in corporate culture and CSR",
@@ -111,7 +169,7 @@ export const brands = [
   {
     title: "Comms 101",
     description: "Lisa's publicity and earned-media consultancy, built for stories that deserve attention.",
-    url: "/work",
+    url: "/publicity",
   },
   {
     title: "OneAnother",

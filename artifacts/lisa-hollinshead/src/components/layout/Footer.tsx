@@ -7,7 +7,7 @@ export function Footer() {
         <div className="max-w-xs">
           <div className="font-serif text-2xl tracking-tight mb-6">Lisa Hollinshead</div>
           <p className="text-muted text-sm leading-relaxed mb-8">
-            Journalist, storyteller, adventurer and founder. Stories that help women see the world, and themselves, differently.
+            Journalist, publicist, founder and storyteller. Stories and strategies that help good ideas earn attention.
           </p>
           <a href="mailto:hello@lisahollinshead.com" className="text-primary hover:text-white transition-colors text-sm tracking-wide">
             hello@lisahollinshead.com
@@ -21,7 +21,7 @@ export function Footer() {
               <Link href="/about" className="text-sm hover:text-primary transition-colors">About</Link>
               <Link href="/journalism" className="text-sm hover:text-primary transition-colors">Journalism</Link>
               <Link href="/speaking" className="text-sm hover:text-primary transition-colors">Speaking</Link>
-              <Link href="/work" className="text-sm hover:text-primary transition-colors">Work With Lisa</Link>
+              <Link href="/publicity" className="text-sm hover:text-primary transition-colors">Publicity</Link>
             </div>
           </div>
           <div>
