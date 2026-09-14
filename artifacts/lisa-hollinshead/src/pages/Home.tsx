@@ -13,7 +13,7 @@ const fadeUp = {
   }),
 };
 
-const publications = ["Mamamia", "9Honey", "SBS", "Kidspot", "Daily Mail", "Social101"];
+const publications = ["Mamamia", "9Honey", "SBS", "Mumbrella", "HR Leader", "Kidspot", "Daily Mail", "Social101"];
 
 export default function Home() {
   return (

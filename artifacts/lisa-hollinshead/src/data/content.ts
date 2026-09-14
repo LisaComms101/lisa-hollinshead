@@ -10,6 +10,24 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    id: 16,
+    headline: "Calling time on social washing in corporate culture and CSR",
+    excerpt: "Why purpose needs to be embedded in workplace culture and corporate responsibility, rather than reduced to promises without meaningful action.",
+    publication: "Mumbrella",
+    date: "June 2024",
+    theme: "People & Culture",
+    url: "https://mumbrella.com.au/calling-time-on-social-washing-when-it-comes-to-investing-in-corporate-culture-and-csr-834653",
+  },
+  {
+    id: 17,
+    headline: "How to foster purpose and productivity while combating social washing",
+    excerpt: "A practical look at the connection between genuine social purpose, employee engagement and productive workplace culture.",
+    publication: "HR Leader",
+    date: "July 2024",
+    theme: "People & Culture",
+    url: "https://www.hrleader.com.au/people/25661-how-to-foster-purpose-and-productivity-while-combating-social-washing",
+  },
+  {
     id: 3,
     headline: "I road-tripped New Zealand's South Island in an RV with my 10-year-old",
     excerpt: "What I wish I had known before taking on an eight-day winter road trip as the only adult behind the wheel.",
