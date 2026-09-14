@@ -8,7 +8,7 @@ const links = [
   { href: "/about", label: "About" },
   { href: "/journalism", label: "Journalism" },
   { href: "/speaking", label: "Speaking" },
-  { href: "/brands", label: "Brands" },
+  { href: "/work", label: "Work With Lisa" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -53,12 +53,6 @@ export function Navbar() {
               </Link>
             ))}
           </div>
-          <Link 
-            href="/contact" 
-            className="text-xs uppercase tracking-widest px-5 py-2.5 bg-foreground text-background hover:bg-primary transition-colors duration-300"
-          >
-            Get in Touch
-          </Link>
         </nav>
 
         {/* Mobile Toggle */}
@@ -86,13 +80,6 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link 
-            href="/contact" 
-            onClick={() => setIsOpen(false)}
-            className="text-sm uppercase tracking-widest px-5 py-3 bg-foreground text-background text-center hover:bg-primary transition-colors"
-          >
-            Get in Touch
-          </Link>
         </div>
       )}
     </header>
