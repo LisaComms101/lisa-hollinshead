@@ -43,11 +43,53 @@ const selectedWork = [
     context: "Recent work for FINNS Bali.",
     role: "Publicity and strategic communications support through Comms 101.",
   },
+];
+
+const experienceGroups = [
   {
-    title: "Pour Sport",
-    context: "Recent work for Pour Sport.",
-    role: "Publicity and strategic communications support through Comms 101.",
+    title: "Entertainment, Sport & Broadcast",
+    items: [
+      "SBS",
+      "FIFA",
+      "BINGE: And Just Like That, via Thinkerbell",
+      "Endemol Shine Australia",
+      "Married at First Sight",
+      "Love Triangle",
+      "Culture Kings x San Francisco 49ers",
+    ],
   },
+  {
+    title: "Travel, Lifestyle & Consumer",
+    items: [
+      "FINNS Bali",
+      "Virgin Australia Canberra Launch",
+      "Bali Marine Safari",
+      "Altina Drinks",
+      "Intentional Tea",
+    ],
+  },
+  {
+    title: "Corporate, Culture & Thought Leadership",
+    items: [
+      "CBA Deepfake Campaign, via M&C Saatchi",
+      "The Fourth Wall",
+      "Inspiring Workplaces Awards",
+      "Wellbeing at Work Summit",
+    ],
+  },
+];
+
+const careerExperience = [
+  "Entertainment and television",
+  "Talent publicity",
+  "Sport",
+  "Travel and tourism",
+  "Consumer brands",
+  "Corporate communications",
+  "Workplace culture",
+  "Founder profiling",
+  "Thought leadership",
+  "Events and awards",
 ];
 
 export default function Publicity() {
@@ -100,6 +142,46 @@ export default function Publicity() {
           >
             Lisa understands how stories travel because she works on both sides of the media. She pitches journalists and is a journalist. She advises founders and is a founder. She creates campaigns and understands the editorial judgement that determines whether they earn attention.
           </motion.blockquote>
+        </div>
+      </section>
+
+      <section className="py-28 lg:py-36 bg-[hsl(45,30%,97%)]">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="max-w-3xl mb-16">
+            <p className="text-xs uppercase tracking-[0.25em] text-[hsl(0,30%,60%)] mb-4 font-sans">Career Experience</p>
+            <h2 className="font-serif text-4xl md:text-5xl text-[hsl(30,3%,17%)] mb-6">Selected Clients & Campaigns</h2>
+            <p className="text-[hsl(35,8%,45%)] leading-relaxed font-light">
+              Selected experience from Lisa’s publicity career, working independently through Comms 101 and alongside major agencies and production companies.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-px bg-[hsl(40,20%,85%)] mb-12">
+            {experienceGroups.map((group, groupIndex) => (
+              <motion.div
+                key={group.title}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: groupIndex * 0.08 }}
+                className="bg-[hsl(45,30%,97%)] p-8 md:p-10"
+              >
+                <h3 className="text-xs uppercase tracking-[0.2em] text-[hsl(0,30%,60%)] mb-8">{group.title}</h3>
+                <ul className="space-y-4">
+                  {group.items.map((item) => (
+                    <li key={item} className="font-serif text-xl text-[hsl(30,3%,22%)] leading-snug">{item}</li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="flex flex-wrap gap-3">
+            {careerExperience.map((area) => (
+              <span key={area} className="px-4 py-2 border border-[hsl(40,20%,80%)] text-sm text-[hsl(35,8%,45%)]">
+                {area}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 

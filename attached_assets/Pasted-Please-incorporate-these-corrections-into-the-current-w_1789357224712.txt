@@ -1,0 +1,146 @@
+Please incorporate these corrections into the current website hierarchy work.
+
+Do not republish when finished. Preserve the existing visual design and do not alter, regenerate or modify any supplied photograph or face.
+
+HOMEPAGE FIRST VIEWPORT
+
+The homepage copy currently sits too low. On a standard desktop screen, visitors can see the photograph but cannot see the complete headline, supporting copy or calls to action without scrolling.
+
+Adjust the hero layout so that:
+
+- The descriptor, complete headline, supporting copy and both CTA buttons are visible within the initial desktop viewport.
+- The text begins within the upper third of the hero rather than being anchored to the bottom.
+- The photograph remains balanced alongside the copy.
+- The header and hero together fit within the viewport.
+- Use vertically centred alignment rather than bottom alignment.
+- Test at 1440 × 900 and 1366 × 768.
+- On mobile, show the descriptor, headline and at least the primary CTA without excessive blank space.
+
+Do not reduce the headline so dramatically that it loses editorial impact. Fix the positioning and spacing first.
+
+ABOUT PAGE PHOTOGRAPHY
+
+The Queenstown photograph of Lisa and Albie is a portrait image being forced into a wide panoramic crop. It currently cuts off both Lisa’s and Albie’s heads.
+
+Do not crop this image into a panoramic banner.
+
+Display it in a portrait or editorial layout that preserves both complete heads and the integrity of the original photograph. Appropriate options include:
+
+- A contained portrait image
+- A centred 4:5 editorial frame
+- A two-column image and copy section
+
+Do not stretch the image, alter faces, generate missing areas or apply AI edits.
+
+Also check every photograph on desktop and mobile to ensure no important face is cut off.
+
+REMOVE POUR SPORT
+
+Lisa is no longer working with Pour Sport due to project delays.
+
+Remove Pour Sport from:
+
+- Homepage publicity experience
+- Publicity page
+- Selected work
+- Brand or client arrays
+- Metadata, hidden copy and any other website reference
+
+Do not describe Pour Sport as a current or recent client.
+
+EXPAND PUBLICITY EXPERIENCE
+
+Publicity is Lisa’s primary commercial and revenue-generating practice. Expand the Selected Publicity Experience section using the following genuine campaigns and clients.
+
+Use the heading:
+
+Selected Clients & Campaigns
+
+Include:
+
+SBS
+FIFA
+Culture Kings x San Francisco 49ers
+The Fourth Wall
+FINNS Bali
+Virgin Australia Canberra Launch
+CBA Deepfake Campaign, via M&C Saatchi
+BINGE: And Just Like That, via Thinkerbell
+Bali Marine Safari
+Endemol Shine Australia
+Married at First Sight
+Love Triangle
+Inspiring Workplaces Awards
+Wellbeing at Work Summit
+Altina Drinks
+Intentional Tea
+
+Where useful, organise them into these groups:
+
+ENTERTAINMENT, SPORT & BROADCAST
+
+- SBS
+- FIFA
+- BINGE: And Just Like That, via Thinkerbell
+- Endemol Shine Australia
+- Married at First Sight
+- Love Triangle
+- Culture Kings x San Francisco 49ers
+
+TRAVEL, LIFESTYLE & CONSUMER
+
+- FINNS Bali
+- Virgin Australia Canberra Launch
+- Bali Marine Safari
+- Altina Drinks
+- Intentional Tea
+
+CORPORATE, CULTURE & THOUGHT LEADERSHIP
+
+- CBA Deepfake Campaign, via M&C Saatchi
+- The Fourth Wall
+- Inspiring Workplaces Awards
+- Wellbeing at Work Summit
+
+Present these as selected career experience, not as a list of current retained clients.
+
+PUBLICITY PAGE
+
+Use the expanded experience to demonstrate that Lisa’s publicity career spans:
+
+- Entertainment and television
+- Talent publicity
+- Sport
+- Travel and tourism
+- Consumer brands
+- Corporate communications
+- Workplace culture
+- Founder profiling
+- Thought leadership
+- Events and awards
+
+Make clear that Lisa has worked both independently through Comms 101 and alongside major agencies and production companies.
+
+Where an agency relationship applies, retain the wording:
+
+via M&C Saatchi
+via Thinkerbell
+
+Do not imply that Lisa was directly retained by CBA or BINGE if the work was delivered through those agencies.
+
+Do not invent campaign results, dates, responsibilities or coverage. Use only confirmed information.
+
+FINAL CHECKS
+
+Confirm:
+
+1. Complete homepage proposition is visible in the first desktop viewport.
+2. Both Lisa’s and Albie’s heads are fully visible in the About page photograph.
+3. Pour Sport appears nowhere.
+4. Publicity experience includes every campaign listed above.
+5. The navigation reads Home, Publicity, Journalism, About, Speaking, Contact.
+6. Publicity appears before Featured Journalism on the homepage.
+7. All supplied images preserve their original faces and composition.
+8. Type-check and production build pass.
+
+Do not republish. Report the completed changes and provide Preview for review.

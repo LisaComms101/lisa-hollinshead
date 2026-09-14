@@ -9,7 +9,7 @@ interface LayoutProps {
 
 export function Layout({ children }: LayoutProps) {
   return (
-    <div className="min-h-screen flex flex-col font-sans text-foreground bg-background">
+    <div className="min-h-screen overflow-x-hidden flex flex-col font-sans text-foreground bg-background">
       <ScrollToTop />
       <Navbar />
       <main className="flex-1">{children}</main>

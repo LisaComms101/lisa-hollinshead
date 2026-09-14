@@ -1,0 +1,1 @@
+- [Homepage hero viewport contract](hero-viewport-contract.md) — preserve full proposition and both CTAs above the fold at 1366×768 as well as 1440×900.

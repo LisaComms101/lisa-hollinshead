@@ -110,12 +110,12 @@ export default function About() {
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="aspect-[16/9] overflow-hidden"
+            className="aspect-[4/5] max-w-xl mx-auto overflow-hidden bg-[hsl(40,25%,94%)]"
           >
             <img
               src={`${import.meta.env.BASE_URL}images/lisa-albie-queenstown.webp`}
               alt="Lisa Hollinshead and Albie in Queenstown"
-              className="h-full w-full object-cover"
+              className="h-full w-full object-contain"
             />
           </motion.div>
         </div>

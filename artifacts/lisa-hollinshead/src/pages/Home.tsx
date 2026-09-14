@@ -24,13 +24,23 @@ const publishedBy = [
   "MiNDFOOD"
 ];
 
-const publicityExperience = [
+const selectedClientsAndCampaigns = [
   "SBS",
   "FIFA",
   "Culture Kings x San Francisco 49ers",
   "The Fourth Wall",
   "FINNS Bali",
-  "Pour Sport"
+  "Virgin Australia Canberra Launch",
+  "CBA Deepfake Campaign, via M&C Saatchi",
+  "BINGE: And Just Like That, via Thinkerbell",
+  "Bali Marine Safari",
+  "Endemol Shine Australia",
+  "Married at First Sight",
+  "Love Triangle",
+  "Inspiring Workplaces Awards",
+  "Wellbeing at Work Summit",
+  "Altina Drinks",
+  "Intentional Tea",
 ];
 
 const selectedPublicityWork = [
@@ -48,11 +58,7 @@ const selectedPublicityWork = [
   },
   {
     title: "FINNS Bali",
-    role: "Additional recent work.",
-  },
-  {
-    title: "Pour Sport",
-    role: "Additional recent work.",
+    role: "Selected publicity experience across travel, lifestyle and consumer campaigns.",
   },
 ];
 
@@ -65,7 +71,7 @@ export default function Home() {
       />
 
       {/* 1. HERO */}
-      <section className="relative min-h-screen flex items-end bg-[hsl(45,30%,97%)] overflow-hidden">
+      <section className="relative min-h-[100svh] flex items-center bg-[hsl(45,30%,97%)] overflow-hidden pt-20">
         <div
           className="absolute inset-0 opacity-20"
           style={{
@@ -74,23 +80,23 @@ export default function Home() {
         />
         <div className="absolute top-0 right-0 w-1/2 h-full bg-[hsl(35,20%,93%)] hidden lg:block" />
 
-        <div className="relative container mx-auto px-6 lg:px-12 pb-20 pt-40 grid lg:grid-cols-2 gap-16 items-end">
-          <motion.div initial="hidden" animate="visible" variants={{ visible: { transition: { staggerChildren: 0.12 } } }}>
-            <motion.p variants={fadeUp} className="text-xs uppercase tracking-[0.25em] text-[hsl(0,30%,60%)] mb-6 font-sans">
+        <div className="relative container mx-auto px-6 lg:px-12 py-12 lg:py-0 grid lg:grid-cols-2 gap-12 xl:gap-16 items-center">
+          <motion.div className="lg:relative lg:-top-4" initial="hidden" animate="visible" variants={{ visible: { transition: { staggerChildren: 0.12 } } }}>
+            <motion.p variants={fadeUp} className="text-xs uppercase tracking-[0.25em] text-[hsl(0,30%,60%)] mb-4 font-sans">
               Journalist · Publicist · Founder · Storyteller
             </motion.p>
-            <motion.h1 variants={fadeUp} className="font-serif text-5xl md:text-6xl lg:text-7xl text-[hsl(30,3%,17%)] leading-[1.05] mb-8">
+            <motion.h1 variants={fadeUp} className="font-serif text-5xl md:text-6xl lg:text-[3.5rem] xl:text-7xl text-[hsl(30,3%,17%)] leading-[1.02] mb-4">
               I tell stories that make people feel something.<br />
               <span className="text-[hsl(35,8%,40%)]">And help good ideas get noticed.</span>
             </motion.h1>
-            <motion.p variants={fadeUp} className="text-lg text-[hsl(35,8%,40%)] leading-relaxed max-w-xl mb-10 font-sans font-light">
+            <motion.p variants={fadeUp} className="text-base md:text-lg text-[hsl(35,8%,40%)] leading-relaxed max-w-xl mb-5 font-sans font-light">
               For more than 20 years, Lisa Hollinshead has worked on both sides of the media, writing stories, creating campaigns, building platforms and helping good ideas earn attention.
             </motion.p>
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4">
-              <Link href="/journalism" className="inline-flex justify-center items-center gap-3 px-8 py-4 bg-[hsl(30,3%,17%)] text-[hsl(45,30%,97%)] text-sm uppercase tracking-widest hover:bg-[hsl(0,30%,60%)] transition-colors duration-300">
+              <Link href="/journalism" className="inline-flex justify-center items-center gap-3 px-8 py-3 bg-[hsl(30,3%,17%)] text-[hsl(45,30%,97%)] text-sm leading-none uppercase tracking-widest hover:bg-[hsl(0,30%,60%)] transition-colors duration-300">
                 Explore Lisa’s Journalism <ArrowRight size={14} />
               </Link>
-              <Link href="/publicity" className="inline-flex justify-center items-center gap-3 px-8 py-4 border border-[hsl(30,3%,17%)] text-[hsl(30,3%,17%)] text-sm uppercase tracking-widest hover:bg-[hsl(30,3%,17%)] hover:text-[hsl(45,30%,97%)] transition-colors duration-300">
+              <Link href="/publicity" className="inline-flex justify-center items-center gap-3 px-8 py-3 border border-[hsl(30,3%,17%)] text-[hsl(30,3%,17%)] text-sm leading-none uppercase tracking-widest hover:bg-[hsl(30,3%,17%)] hover:text-[hsl(45,30%,97%)] transition-colors duration-300">
                 Publicity & Strategy <ArrowRight size={14} />
               </Link>
             </motion.div>
@@ -102,7 +108,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
             className="hidden lg:block"
           >
-            <div className="w-full aspect-[3/4] bg-[hsl(40,20%,88%)] relative overflow-hidden">
+            <div className="w-full h-[min(68vh,680px)] bg-[hsl(40,20%,88%)] relative overflow-hidden">
               <img
                 src={`${import.meta.env.BASE_URL}images/lisa-hero-beach.webp`}
                 alt="Lisa Hollinshead on the beach"
@@ -128,9 +134,9 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <p className="text-xs uppercase tracking-[0.25em] text-[hsl(35,8%,55%)] mb-8 font-sans">Publicity Experience</p>
+            <p className="text-xs uppercase tracking-[0.25em] text-[hsl(35,8%,55%)] mb-8 font-sans">Selected Clients & Campaigns</p>
             <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
-              {publicityExperience.map((exp) => (
+              {selectedClientsAndCampaigns.map((exp) => (
                 <span key={exp} className="font-serif text-lg md:text-xl text-[hsl(35,8%,55%)] tracking-wide hover:text-[hsl(30,3%,17%)] transition-colors cursor-default">
                   {exp}
                 </span>
