@@ -8,7 +8,7 @@ const fadeUp = {
   hidden: { opacity: 0, y: 24 },
   visible: (i = 0) => ({
     opacity: 1, y: 0,
-    transition: { duration: 0.6, delay: i * 0.07, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.6, delay: i * 0.07, ease: [0.22, 1, 0.36, 1] as const },
   }),
 };
 
@@ -23,7 +23,7 @@ export default function Journalism() {
     <>
       <SEO
         title="Journalism | Lisa Hollinshead"
-        description="Read Lisa Hollinshead's journalism — first-person features on modern womanhood, ADHD, health, relationships, career and personal growth."
+        description="Read Lisa Hollinshead's journalism, including travel, first-person essays, motherhood, reinvention, profiles and culture."
       />
 
       {/* PAGE HEADER */}
@@ -50,7 +50,7 @@ export default function Journalism() {
             transition={{ delay: 0.2 }}
             className="mt-6 text-lg text-[hsl(35,8%,45%)] max-w-xl font-light"
           >
-            First-person journalism exploring the emotional, psychological and practical realities of modern womanhood.
+            Travel, first-person essays, profiles and stories about the lives we are actually living.
           </motion.p>
         </div>
       </section>
@@ -83,9 +83,12 @@ export default function Journalism() {
       <section className="py-20 bg-[hsl(45,30%,97%)]">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-[hsl(40,20%,85%)]">
-            {articles.map((article, i) => (
-              <motion.article
+            {filtered.map((article, i) => (
+              <motion.a
                 key={article.id}
+                href={article.url}
+                target="_blank"
+                rel="noreferrer"
                 custom={i}
                 initial="hidden"
                 whileInView="visible"
@@ -104,7 +107,7 @@ export default function Journalism() {
                 <span className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[hsl(35,8%,55%)] group-hover:text-[hsl(30,3%,17%)] transition-colors mt-auto">
                   Read Article <ArrowRight size={12} />
                 </span>
-              </motion.article>
+              </motion.a>
             ))}
           </div>
 

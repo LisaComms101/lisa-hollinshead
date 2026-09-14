@@ -1,6 +1,6 @@
-# [Project name]
+# Lisa Hollinshead
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+The personal editorial and commercial home of journalist, storyteller, publicist and founder Lisa Hollinshead.
 
 ## Run & Operate
 
@@ -22,23 +22,41 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- Frontend app: `artifacts/lisa-hollinshead`
+- Routes: `artifacts/lisa-hollinshead/src/App.tsx`
+- Page content: `artifacts/lisa-hollinshead/src/pages`
+- Articles, themes and venture links: `artifacts/lisa-hollinshead/src/data/content.ts`
+- Global visual theme: `artifacts/lisa-hollinshead/src/index.css`
+- Public images and metadata: `artifacts/lisa-hollinshead/public`
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- LisaHollinshead.com is the front door for Lisa's personal brand, journalism, publicity, speaking and podcast.
+- Comms 101 remains Lisa's commercial publicity identity but lives inside the Work With Lisa section.
+- Social101 remains a separate publication; OneAnother remains a separate company/product.
+- Not Backwards at Coming Forwards lives within this site for V1 rather than becoming a separate website.
+- V1 is a static editorial portfolio. Do not show successful form submissions unless data is actually sent or stored.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Discover Lisa's published journalism and follow verified external links.
+- Understand Lisa's publicity, editorial, advisory and speaking offer.
+- Explore Social101 and OneAnother as distinct founder ventures.
+- Contact Lisa directly about commissions, campaigns, speaking and partnerships.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- Preserve the approved editorial, magazine-like visual direction. Evolve it rather than redesigning it.
+- Use only genuine supplied photography. Never generate, alter, beautify or change faces, bodies or documentary scenes.
+- No generic stock photography.
+- Keep copy warm, intelligent, human and specific. Avoid em dashes.
+- Prioritise shipping a credible V1 over adding features.
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- Production builds require `PORT` and `BASE_PATH`, for example `PORT=5173 BASE_PATH=/ pnpm --filter @workspace/lisa-hollinshead run build`.
+- Do not invent articles, publications, dates, testimonials, client results or links.
+- The `/brands` route remains as a legacy alias; the current navigation uses `/work`.
 
 ## Pointers
 

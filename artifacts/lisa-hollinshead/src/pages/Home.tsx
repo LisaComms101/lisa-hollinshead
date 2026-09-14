@@ -3,23 +3,19 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { articles, themes, brands } from "@/data/content";
-import { useState } from "react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 32 },
   visible: (i = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.7, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.7, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] as const },
   }),
 };
 
-const publications = ["MailOnline", "Mamamia", "Social101", "SBS", "9Honey", "Kidspot", "Daily Mail"];
+const publications = ["Mamamia", "9Honey", "SBS", "Kidspot", "Daily Mail", "Social101"];
 
 export default function Home() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
   return (
     <>
       <SEO
@@ -40,20 +36,20 @@ export default function Home() {
         <div className="relative container mx-auto px-6 lg:px-12 pb-20 pt-40 grid lg:grid-cols-2 gap-16 items-end">
           <motion.div initial="hidden" animate="visible" variants={{ visible: { transition: { staggerChildren: 0.12 } } }}>
             <motion.p variants={fadeUp} className="text-xs uppercase tracking-[0.25em] text-[hsl(0,30%,60%)] mb-6 font-sans">
-              Journalist · Author · Speaker · Strategist
+              Journalist · Storyteller · Adventurer
             </motion.p>
             <motion.h1 variants={fadeUp} className="font-serif text-6xl md:text-7xl lg:text-8xl text-[hsl(30,3%,17%)] leading-[0.95] mb-8">
               Lisa<br />Hollinshead
             </motion.h1>
             <motion.p variants={fadeUp} className="text-lg text-[hsl(35,8%,40%)] leading-relaxed max-w-xl mb-10 font-sans font-light">
-              Thoughtful first-person journalism exploring what it really means to be a modern woman in her forties — through the lens of psychology, health, relationships, ADHD, motherhood, career and personal growth.
+              Stories that help women see the world, and themselves, differently. Lisa writes, builds and creates at the intersection of travel, reinvention, media and real-world connection.
             </motion.p>
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4">
               <Link href="/journalism" className="inline-flex items-center gap-3 px-8 py-4 bg-[hsl(30,3%,17%)] text-[hsl(45,30%,97%)] text-sm uppercase tracking-widest hover:bg-[hsl(0,30%,60%)] transition-colors duration-300">
-                Read Lisa's Work <ArrowRight size={14} />
+                Read My Work <ArrowRight size={14} />
               </Link>
               <Link href="/contact" className="inline-flex items-center gap-3 px-8 py-4 border border-[hsl(30,3%,17%)] text-[hsl(30,3%,17%)] text-sm uppercase tracking-widest hover:bg-[hsl(30,3%,17%)] hover:text-[hsl(45,30%,97%)] transition-colors duration-300">
-                Book Lisa / Get in Touch
+                Work With Me
               </Link>
             </motion.div>
           </motion.div>
@@ -73,7 +69,7 @@ export default function Home() {
               />
               <div className="absolute bottom-8 left-8 right-8">
                 <blockquote className="font-serif text-xl italic text-[hsl(30,3%,25%)] leading-relaxed">
-                  "The quiet power of finally feeling enough."
+                  "Curious about people. Restless for stories. Always ready to go."
                 </blockquote>
               </div>
             </div>
@@ -133,13 +129,13 @@ export default function Home() {
           >
             <motion.p variants={fadeUp} className="text-xs uppercase tracking-[0.25em] text-[hsl(0,30%,60%)] mb-5 font-sans">About Lisa</motion.p>
             <motion.h2 variants={fadeUp} className="font-serif text-4xl md:text-5xl text-[hsl(30,3%,17%)] leading-tight mb-8">
-              More than two decades of stories that matter
+              I have never really fitted in one box
             </motion.h2>
             <motion.p variants={fadeUp} className="text-[hsl(35,8%,40%)] leading-relaxed mb-6 font-light">
-              Lisa Hollinshead is a journalist, communications strategist and founder with more than 20 years' experience across media, PR, storytelling and brand building.
+              I am a journalist who became a publicist. A publicist who became a founder. A founder who kept writing.
             </motion.p>
             <motion.p variants={fadeUp} className="text-[hsl(35,8%,40%)] leading-relaxed mb-10 font-light">
-              As the founder of Social101, Comms101 and One Another, Lisa has spent her career helping people, brands and communities tell stories that matter. Now, through her own writing and commentary, she explores the emotional, psychological and practical realities of modern womanhood.
+              For more than 20 years, I have worked across media, communications and publishing in Australia and the UK. These days my work sits somewhere between journalism, publicity, community and curiosity. Sometimes I am interviewing someone. Sometimes I am getting them interviewed. Sometimes I am building the thing we are talking about.
             </motion.p>
             <motion.div variants={fadeUp}>
               <Link href="/about" className="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-[hsl(30,3%,17%)] border-b border-[hsl(30,3%,17%)] pb-1 hover:text-[hsl(0,30%,60%)] hover:border-[hsl(0,30%,60%)] transition-colors">
@@ -210,8 +206,11 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-[hsl(40,20%,85%)]">
             {articles.slice(0, 6).map((article, i) => (
-              <motion.article
+              <motion.a
                 key={article.id}
+                href={article.url}
+                target="_blank"
+                rel="noreferrer"
                 custom={i}
                 initial="hidden"
                 whileInView="visible"
@@ -230,7 +229,7 @@ export default function Home() {
                 <span className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[hsl(35,8%,55%)] group-hover:text-[hsl(30,3%,17%)] transition-colors">
                   Read More <ArrowRight size={12} />
                 </span>
-              </motion.article>
+              </motion.a>
             ))}
           </div>
         </div>
@@ -246,7 +245,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="font-serif text-3xl md:text-4xl lg:text-5xl text-[hsl(45,30%,97%)] italic leading-tight"
           >
-            "Relatable without being preachy. Vulnerable without being self-indulgent. Practical without losing emotional depth."
+            "Commission me. Send me somewhere. Give me a story. Put me in a room with someone interesting."
           </motion.blockquote>
         </div>
       </section>
@@ -265,7 +264,7 @@ export default function Home() {
               Speak with Lisa
             </motion.h2>
             <motion.p variants={fadeUp} className="text-[hsl(35,8%,40%)] leading-relaxed mb-6 font-light">
-              Lisa is available for media commentary, podcast interviews, panels and speaking opportunities on modern womanhood, ADHD, single motherhood, reinvention, storytelling, personal branding, PR, kindness, community and the changing definition of success.
+              Lisa is available for media commentary, podcast interviews, panels, MC roles and speaking opportunities spanning reinvention, storytelling, ADHD, single motherhood, publicity, founder life and community.
             </motion.p>
             <motion.div variants={fadeUp} className="flex flex-wrap gap-2 mb-10">
               {["Modern Womanhood", "ADHD", "Single Motherhood", "Reinvention", "Personal Branding", "Storytelling", "Kindness"].map(t => (
@@ -308,13 +307,16 @@ export default function Home() {
             <motion.p variants={fadeUp} className="text-xs uppercase tracking-[0.25em] text-[hsl(0,30%,60%)] mb-4 font-sans">Founder Of</motion.p>
             <motion.h2 variants={fadeUp} className="font-serif text-4xl md:text-5xl text-[hsl(30,3%,17%)]">Lisa's Brands</motion.h2>
             <motion.p variants={fadeUp} className="mt-6 text-[hsl(35,8%,45%)] font-light max-w-lg mx-auto">
-              Lisa's work spans publishing, publicity, production and purpose-led community building.
+              Publishing, publicity and community. Distinct ventures, connected by a belief in the power of a good story.
             </motion.p>
           </motion.div>
           <div className="grid md:grid-cols-3 gap-px bg-[hsl(40,20%,85%)]">
             {brands.map((brand, i) => (
-              <motion.div
+              <motion.a
                 key={brand.title}
+                href={brand.url}
+                target={brand.url.startsWith("http") ? "_blank" : undefined}
+                rel={brand.url.startsWith("http") ? "noreferrer" : undefined}
                 custom={i}
                 initial="hidden"
                 whileInView="visible"
@@ -325,13 +327,13 @@ export default function Home() {
                 <h3 className="font-serif text-2xl text-[hsl(30,3%,17%)] mb-4">{brand.title}</h3>
                 <div className="w-10 h-px bg-[hsl(0,30%,65%)] mb-6" />
                 <p className="text-sm text-[hsl(35,8%,45%)] leading-relaxed font-light">{brand.description}</p>
-              </motion.div>
+              </motion.a>
             ))}
           </div>
         </div>
       </section>
 
-      {/* NEWSLETTER */}
+      {/* PODCAST */}
       <section className="py-28 lg:py-36 bg-[hsl(30,3%,17%)]">
         <div className="container mx-auto px-6 lg:px-12 max-w-2xl text-center">
           <motion.div
@@ -340,39 +342,18 @@ export default function Home() {
             viewport={{ once: true }}
             variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
           >
-            <motion.p variants={fadeUp} className="text-xs uppercase tracking-[0.25em] text-[hsl(0,30%,65%)] mb-5 font-sans">Newsletter</motion.p>
+            <motion.p variants={fadeUp} className="text-xs uppercase tracking-[0.25em] text-[hsl(0,30%,65%)] mb-5 font-sans">Coming Soon</motion.p>
             <motion.h2 variants={fadeUp} className="font-serif text-4xl md:text-5xl text-[hsl(45,30%,97%)] leading-tight mb-6">
-              Secure. Content. Seen.
+              Not Backwards at Coming Forwards
             </motion.h2>
             <motion.p variants={fadeUp} className="text-[hsl(35,8%,65%)] leading-relaxed mb-10 font-light">
-              A thoughtful newsletter for women navigating identity, health, relationships, ambition and the quiet power of becoming enough.
+              First-person essays become bigger conversations about single motherhood, dating, reinvention, money, work, ageing and starting again.
             </motion.p>
-            {submitted ? (
-              <motion.p variants={fadeUp} className="font-serif text-xl italic text-[hsl(0,30%,75%)]">
-                Thank you for joining the list.
-              </motion.p>
-            ) : (
-              <motion.form
-                variants={fadeUp}
-                onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
-                className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-              >
-                <input
-                  type="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Your email address"
-                  className="flex-1 px-5 py-4 bg-transparent border border-[hsl(35,8%,35%)] text-[hsl(45,30%,97%)] placeholder:text-[hsl(35,8%,50%)] text-sm focus:outline-none focus:border-[hsl(0,30%,65%)] transition-colors font-sans"
-                />
-                <button
-                  type="submit"
-                  className="px-8 py-4 bg-[hsl(0,30%,65%)] text-[hsl(45,30%,97%)] text-xs uppercase tracking-widest hover:bg-[hsl(0,30%,55%)] transition-colors font-sans"
-                >
-                  Join the List
-                </button>
-              </motion.form>
-            )}
+            <motion.div variants={fadeUp}>
+              <Link href="/contact" className="inline-flex items-center gap-3 px-8 py-4 border border-[hsl(35,8%,45%)] text-[hsl(45,30%,97%)] text-xs uppercase tracking-widest hover:bg-[hsl(0,30%,60%)] hover:border-[hsl(0,30%,60%)] transition-colors">
+                Partnerships & Enquiries <ArrowRight size={14} />
+              </Link>
+            </motion.div>
           </motion.div>
         </div>
       </section>

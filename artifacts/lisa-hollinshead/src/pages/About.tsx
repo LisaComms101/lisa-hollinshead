@@ -7,7 +7,7 @@ const fadeUp = {
   hidden: { opacity: 0, y: 28 },
   visible: (i = 0) => ({
     opacity: 1, y: 0,
-    transition: { duration: 0.7, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.7, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] as const },
   }),
 };
 
@@ -15,8 +15,8 @@ export default function About() {
   return (
     <>
       <SEO
-        title="About Lisa Hollinshead | Journalist, Author & Communications Strategist"
-        description="Lisa Hollinshead is a journalist, communications strategist and founder with more than 20 years' experience across media, PR, storytelling and brand building."
+        title="About Lisa Hollinshead | Journalist, Storyteller & Founder"
+        description="Lisa Hollinshead is an Australian journalist, storyteller, publicist and founder with more than 20 years across media, communications, publishing and community."
       />
 
       {/* PAGE HEADER */}
@@ -60,7 +60,7 @@ export default function About() {
               />
               <div className="absolute bottom-8 left-8 right-8">
                 <p className="font-serif text-lg italic text-[hsl(30,3%,28%)] leading-relaxed">
-                  "Stories that matter — told with honesty, intelligence, and depth."
+                  "A career built by following curiosity, rather than a career ladder."
                 </p>
               </div>
             </div>
@@ -74,21 +74,21 @@ export default function About() {
             className="lg:col-span-2 space-y-8"
           >
             <motion.p variants={fadeUp} className="font-serif text-2xl md:text-3xl text-[hsl(30,3%,20%)] leading-relaxed">
-              Lisa Hollinshead is a journalist, communications strategist and founder with more than 20 years' experience across media, PR, storytelling and brand building.
+              I am a journalist who became a publicist. A publicist who became a founder. A founder who kept writing.
             </motion.p>
 
             <motion.div variants={fadeUp} className="w-16 h-px bg-[hsl(0,30%,65%)]" />
 
             <motion.p variants={fadeUp} className="text-[hsl(35,8%,40%)] leading-relaxed text-lg font-light">
-              As the founder of Social101, Comms101 and One Another, Lisa has spent her career helping people, brands and communities tell stories that matter. Now, through her own writing and commentary, she explores the emotional, psychological and practical realities of modern womanhood.
+              I grew up in Bolton, built my early career across Manchester and London, then moved to Australia and kept following the stories. In 2010 I launched Social101. Comms 101 followed, then OneAnother, alongside a career spanning entertainment, sport, travel, culture, brands and broadcast publicity.
             </motion.p>
 
             <motion.p variants={fadeUp} className="text-[hsl(35,8%,40%)] leading-relaxed font-light">
-              Her writing explores the territories that too often go unspoken — from ADHD, relationships and burnout to single motherhood, reinvention, wellbeing and the quiet power of finally feeling enough. Drawing on two decades of experience across journalism, PR, media production and community building, Lisa brings a rare combination of professional insight and personal honesty to every piece she writes.
+              My work rarely fits into a neat category. I have interviewed people, launched businesses, written a book, built publications and communities, helped brands earn attention and worked behind the scenes on some extraordinary television and cultural stories.
             </motion.p>
 
             <motion.p variants={fadeUp} className="text-[hsl(35,8%,40%)] leading-relaxed font-light">
-              Lisa writes for audiences who are navigating the messy, meaningful middle of their lives — women who want to think more deeply, feel less alone, and find practical wisdom in the personal. Her voice is warm, intelligent, and unflinchingly honest.
+              Today I write about travel, reinvention, motherhood, ADHD, founder life and what it means to begin again in your forties. The thread through all of it is curiosity: about people, places, ideas and what happens when the three collide.
             </motion.p>
 
             <motion.div variants={fadeUp} className="pt-4 flex flex-col sm:flex-row gap-4">
@@ -151,7 +151,7 @@ export default function About() {
             viewport={{ once: true }}
             className="font-serif text-3xl md:text-4xl text-[hsl(45,30%,97%)] italic leading-tight"
           >
-            "Helping people, brands and communities tell stories that matter — for more than twenty years."
+            "Mostly, I am interested in people, ideas and what happens when the two connect."
           </motion.blockquote>
         </div>
       </section>
